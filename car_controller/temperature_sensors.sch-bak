@@ -1,0 +1,393 @@
+EESchema Schematic File Version 4
+LIBS:car_controller-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensor_Temperature:MAX31855EASA U?
+U 1 1 5F58D9E3
+P 2200 3450
+AR Path="/5F58D9E3" Ref="U?"  Part="1" 
+AR Path="/5F58999D/5F58D9E3" Ref="U11"  Part="1" 
+F 0 "U11" H 2200 4031 50  0000 C CNN
+F 1 "MAX31855EASA" H 2200 3940 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3200 3100 50  0001 C CIN
+F 3 "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 2200 3450 50  0001 C CNN
+	1    2200 3450
+	1    0    0    -1  
+$EndComp
+Text HLabel 2700 3250 2    50   Input ~ 0
+SPI_SCK
+Text HLabel 2700 3350 2    50   Input ~ 0
+SPI_MISO
+Wire Wire Line
+	2700 3250 2600 3250
+Wire Wire Line
+	2600 3350 2700 3350
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F58D9ED
+P 2200 2800
+AR Path="/5F58D9ED" Ref="#PWR?"  Part="1" 
+AR Path="/5F58999D/5F58D9ED" Ref="#PWR038"  Part="1" 
+F 0 "#PWR038" H 2200 2650 50  0001 C CNN
+F 1 "+3V3" H 2215 2973 50  0000 C CNN
+F 2 "" H 2200 2800 50  0001 C CNN
+F 3 "" H 2200 2800 50  0001 C CNN
+	1    2200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2800 2200 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5F58D9F4
+P 2200 3950
+AR Path="/5F58D9F4" Ref="#PWR?"  Part="1" 
+AR Path="/5F58999D/5F58D9F4" Ref="#PWR039"  Part="1" 
+F 0 "#PWR039" H 2200 3700 50  0001 C CNN
+F 1 "GND" H 2205 3777 50  0000 C CNN
+F 2 "" H 2200 3950 50  0001 C CNN
+F 3 "" H 2200 3950 50  0001 C CNN
+	1    2200 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3950 2200 3850
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F58D9FB
+P 3550 3250
+AR Path="/5F58D9FB" Ref="#PWR?"  Part="1" 
+AR Path="/5F58999D/5F58D9FB" Ref="#PWR042"  Part="1" 
+F 0 "#PWR042" H 3550 3100 50  0001 C CNN
+F 1 "+3V3" H 3565 3423 50  0000 C CNN
+F 2 "" H 3550 3250 50  0001 C CNN
+F 3 "" H 3550 3250 50  0001 C CNN
+	1    3550 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F58DA01
+P 3550 3650
+AR Path="/5F58DA01" Ref="#PWR?"  Part="1" 
+AR Path="/5F58999D/5F58DA01" Ref="#PWR043"  Part="1" 
+F 0 "#PWR043" H 3550 3400 50  0001 C CNN
+F 1 "GND" H 3555 3477 50  0000 C CNN
+F 2 "" H 3550 3650 50  0001 C CNN
+F 3 "" H 3550 3650 50  0001 C CNN
+	1    3550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F58DA07
+P 3550 3450
+AR Path="/5F58DA07" Ref="C?"  Part="1" 
+AR Path="/5F58999D/5F58DA07" Ref="C6"  Part="1" 
+F 0 "C6" H 3642 3496 50  0000 L CNN
+F 1 "100nF" H 3642 3405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3550 3450 50  0001 C CNN
+F 3 "~" H 3550 3450 50  0001 C CNN
+	1    3550 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3350 3550 3250
+Wire Wire Line
+	3550 3550 3550 3650
+Text HLabel 1050 3250 0    50   Input ~ 0
+T_1+
+Text HLabel 1050 3650 0    50   Input ~ 0
+T_1-
+Text HLabel 2700 3550 2    50   Input ~ 0
+CS_1
+Wire Wire Line
+	2700 3550 2650 3550
+$Comp
+L Sensor_Temperature:MAX31855EASA U?
+U 1 1 5F5910E3
+P 2200 1650
+AR Path="/5F5910E3" Ref="U?"  Part="1" 
+AR Path="/5F58999D/5F5910E3" Ref="U10"  Part="1" 
+F 0 "U10" H 2200 2231 50  0000 C CNN
+F 1 "MAX31855EASA" H 2200 2140 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3200 1300 50  0001 C CIN
+F 3 "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 2200 1650 50  0001 C CNN
+	1    2200 1650
+	1    0    0    -1  
+$EndComp
+Text HLabel 2700 1450 2    50   Input ~ 0
+SPI_SCK
+Text HLabel 2700 1550 2    50   Input ~ 0
+SPI_MISO
+Wire Wire Line
+	2700 1450 2600 1450
+Wire Wire Line
+	2600 1550 2700 1550
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F5910ED
+P 2200 1000
+AR Path="/5F5910ED" Ref="#PWR?"  Part="1" 
+AR Path="/5F58999D/5F5910ED" Ref="#PWR036"  Part="1" 
+F 0 "#PWR036" H 2200 850 50  0001 C CNN
+F 1 "+3V3" H 2215 1173 50  0000 C CNN
+F 2 "" H 2200 1000 50  0001 C CNN
+F 3 "" H 2200 1000 50  0001 C CNN
+	1    2200 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1000 2200 1250
+$Comp
+L power:GND #PWR?
+U 1 1 5F5910F4
+P 2200 2150
+AR Path="/5F5910F4" Ref="#PWR?"  Part="1" 
+AR Path="/5F58999D/5F5910F4" Ref="#PWR037"  Part="1" 
+F 0 "#PWR037" H 2200 1900 50  0001 C CNN
+F 1 "GND" H 2205 1977 50  0000 C CNN
+F 2 "" H 2200 2150 50  0001 C CNN
+F 3 "" H 2200 2150 50  0001 C CNN
+	1    2200 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2150 2200 2050
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F5910FB
+P 3550 1450
+AR Path="/5F5910FB" Ref="#PWR?"  Part="1" 
+AR Path="/5F58999D/5F5910FB" Ref="#PWR040"  Part="1" 
+F 0 "#PWR040" H 3550 1300 50  0001 C CNN
+F 1 "+3V3" H 3565 1623 50  0000 C CNN
+F 2 "" H 3550 1450 50  0001 C CNN
+F 3 "" H 3550 1450 50  0001 C CNN
+	1    3550 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F591101
+P 3550 1850
+AR Path="/5F591101" Ref="#PWR?"  Part="1" 
+AR Path="/5F58999D/5F591101" Ref="#PWR041"  Part="1" 
+F 0 "#PWR041" H 3550 1600 50  0001 C CNN
+F 1 "GND" H 3555 1677 50  0000 C CNN
+F 2 "" H 3550 1850 50  0001 C CNN
+F 3 "" H 3550 1850 50  0001 C CNN
+	1    3550 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F591107
+P 3550 1650
+AR Path="/5F591107" Ref="C?"  Part="1" 
+AR Path="/5F58999D/5F591107" Ref="C5"  Part="1" 
+F 0 "C5" H 3642 1696 50  0000 L CNN
+F 1 "100nF" H 3642 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3550 1650 50  0001 C CNN
+F 3 "~" H 3550 1650 50  0001 C CNN
+	1    3550 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1550 3550 1450
+Wire Wire Line
+	3550 1750 3550 1850
+Text HLabel 1050 1450 0    50   Input ~ 0
+T_0+
+Text HLabel 1050 1850 0    50   Input ~ 0
+T_0-
+Text HLabel 2700 1750 2    50   Input ~ 0
+CS_0
+Wire Wire Line
+	2700 1750 2650 1750
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 5F5B4205
+P 1250 1450
+F 0 "FB1" V 1013 1450 50  0000 C CNN
+F 1 "470Ω" V 1104 1450 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1180 1450 50  0001 C CNN
+F 3 "~" H 1250 1450 50  0001 C CNN
+	1    1250 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB2
+U 1 1 5F5B4B5E
+P 1250 1850
+F 0 "FB2" V 1013 1850 50  0000 C CNN
+F 1 "470Ω" V 1104 1850 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1180 1850 50  0001 C CNN
+F 3 "~" H 1250 1850 50  0001 C CNN
+	1    1250 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB3
+U 1 1 5F5B6D86
+P 1250 3250
+F 0 "FB3" V 1013 3250 50  0000 C CNN
+F 1 "470Ω" V 1104 3250 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1180 3250 50  0001 C CNN
+F 3 "~" H 1250 3250 50  0001 C CNN
+	1    1250 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB4
+U 1 1 5F5B6D8C
+P 1250 3650
+F 0 "FB4" V 1013 3650 50  0000 C CNN
+F 1 "470Ω" V 1104 3650 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1180 3650 50  0001 C CNN
+F 3 "~" H 1250 3650 50  0001 C CNN
+	1    1250 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5F5B7C88
+P 1450 1650
+F 0 "C3" H 1542 1696 50  0000 L CNN
+F 1 "10nF" H 1542 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1450 1650 50  0001 C CNN
+F 3 "~" H 1450 1650 50  0001 C CNN
+	1    1450 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5F5B83C4
+P 1450 3450
+F 0 "C4" H 1542 3496 50  0000 L CNN
+F 1 "10nF" H 1542 3405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1450 3450 50  0001 C CNN
+F 3 "~" H 1450 3450 50  0001 C CNN
+	1    1450 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 1550 1450 1450
+Wire Wire Line
+	1450 1450 1350 1450
+Wire Wire Line
+	1450 1750 1450 1850
+Wire Wire Line
+	1450 1850 1350 1850
+Wire Wire Line
+	1150 1450 1050 1450
+Wire Wire Line
+	1050 1850 1150 1850
+Wire Wire Line
+	1050 3250 1150 3250
+Wire Wire Line
+	1150 3650 1050 3650
+Wire Wire Line
+	1350 3250 1450 3250
+Wire Wire Line
+	1450 3250 1450 3350
+Wire Wire Line
+	1450 3550 1450 3650
+Wire Wire Line
+	1450 3650 1350 3650
+Wire Wire Line
+	1800 3550 1450 3550
+Connection ~ 1450 3550
+Wire Wire Line
+	1800 3350 1450 3350
+Connection ~ 1450 3350
+Wire Wire Line
+	1800 1550 1450 1550
+Connection ~ 1450 1550
+Wire Wire Line
+	1800 1750 1450 1750
+Connection ~ 1450 1750
+$Comp
+L Device:R_Small R25
+U 1 1 5F63B030
+P 2850 1950
+F 0 "R25" V 2950 1950 50  0000 C CNN
+F 1 "10k" V 3300 3525 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2850 1950 50  0001 C CNN
+F 3 "~" H 2850 1950 50  0001 C CNN
+	1    2850 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2750 1950 2650 1950
+Wire Wire Line
+	2650 1950 2650 1750
+Connection ~ 2650 1750
+Wire Wire Line
+	2650 1750 2600 1750
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F63D497
+P 3200 1750
+AR Path="/5F63D497" Ref="#PWR?"  Part="1" 
+AR Path="/5F58999D/5F63D497" Ref="#PWR044"  Part="1" 
+F 0 "#PWR044" H 3200 1600 50  0001 C CNN
+F 1 "+3V3" H 3215 1923 50  0000 C CNN
+F 2 "" H 3200 1750 50  0001 C CNN
+F 3 "" H 3200 1750 50  0001 C CNN
+	1    3200 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1750 3200 1950
+Wire Wire Line
+	3200 1950 2950 1950
+$Comp
+L Device:R_Small R26
+U 1 1 5F63F560
+P 2850 3750
+F 0 "R26" V 2950 3750 50  0000 C CNN
+F 1 "10k" V 2750 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2850 3750 50  0001 C CNN
+F 3 "~" H 2850 3750 50  0001 C CNN
+	1    2850 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2750 3750 2650 3750
+Wire Wire Line
+	2650 3750 2650 3550
+Wire Wire Line
+	3200 3550 3200 3750
+Wire Wire Line
+	3200 3750 2950 3750
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F63FBB2
+P 3200 3550
+AR Path="/5F63FBB2" Ref="#PWR?"  Part="1" 
+AR Path="/5F58999D/5F63FBB2" Ref="#PWR045"  Part="1" 
+F 0 "#PWR045" H 3200 3400 50  0001 C CNN
+F 1 "+3V3" H 3215 3723 50  0000 C CNN
+F 2 "" H 3200 3550 50  0001 C CNN
+F 3 "" H 3200 3550 50  0001 C CNN
+	1    3200 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 2650 3550
+Wire Wire Line
+	2650 3550 2600 3550
+$EndSCHEMATC

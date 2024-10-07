@@ -1,0 +1,50 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PSMN013-30MLC:PSMN013-30MLC Q1
+U 1 1 5F568D8A
+P 1950 1200
+F 0 "Q1" H 2148 1246 50  0000 L CNN
+F 1 "PSMN013-30MLC" H 2148 1155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:LFPAK33" H 1950 1200 50  0001 L BNN
+F 3 "05W5709" H 1950 1200 50  0001 L BNN
+F 4 "PSMN013-30MLC" H 1950 1200 50  0001 L BNN "Field5"
+F 5 "2115260" H 1950 1200 50  0001 L BNN "Field6"
+	1    1950 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 5F56AE0C
+P 1350 1300
+F 0 "J1" H 1458 1581 50  0000 C CNN
+F 1 "DGS_M" H 1458 1490 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 1350 1300 50  0001 C CNN
+F 3 "~" H 1350 1300 50  0001 C CNN
+	1    1350 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1300 1850 1300
+Wire Wire Line
+	1550 1200 1750 1200
+Wire Wire Line
+	1750 1200 1750 1000
+Wire Wire Line
+	1750 1000 2050 1000
+Wire Wire Line
+	1550 1400 2050 1400
+$EndSCHEMATC
