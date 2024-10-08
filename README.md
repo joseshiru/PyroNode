@@ -87,6 +87,7 @@ void loop() {
 This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)** license.
 
 - **Free for personal and non-commercial use.**
-- **For commercial use, please contact [your email or website].**
+- **Credits: Build by Jose Zuniga Marin.**
+- **For commercial use, please contact hello@malecu.eu.**
 
 You can read the full license [here](https://creativecommons.org/licenses/by-nc/4.0/).
