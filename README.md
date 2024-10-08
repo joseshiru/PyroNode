@@ -1,5 +1,8 @@
 # PyroNode
 
+![PCB Photo](https://raw.githubusercontent.com/joseshiru/PyroNode/refs/heads/main/pcb_photo.png)
+
+
 **PyroNode** is an open-source ESP32-based control system designed to manage multiple outputs, monitor temperature, and provide robust control over external devices. Originally built for automotive applications as a cost-effective alternative to a PMU (Power Management Unit) or aftermarket ECU, PyroNode has proven its versatility and can be adapted for various other projects, such as home automation or even controlling a **coffee roaster**.
 
 ## Features
